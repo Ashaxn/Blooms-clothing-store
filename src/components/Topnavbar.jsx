@@ -23,6 +23,7 @@ const Right = styled.div`
 const Language = styled.span`
     font-size: 14px;
     cursor: pointer;
+    margin-right: 30px;
 `;
 
 const MenuItem = styled.div`
@@ -31,14 +32,37 @@ const MenuItem = styled.div`
     margin-left: 30px;
 `;
 
+const TopNavBorder = styled.div`
+    border-left: 2px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+`;
+
+const TopNavBorderRight = styled.div`
+    border-right: 2px solid lightgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+`;
+
 const Topnavbar = () => {
   return (
     <Container>
         <Wrapper>
             <Right>
-                <MenuItem style={{color: "Black"}}>Marketplace</MenuItem>
-                <MenuItem style={{color: "Black"}}>Help & FAQs</MenuItem>
-                <MenuItem style={{color: "Black"}}><Language>EN</Language></MenuItem>
+                <TopNavBorder>
+                    <MenuItem style={{color: "Black"}}>Marketplace</MenuItem>
+                </TopNavBorder>
+                <TopNavBorder>
+                    <MenuItem style={{color: "Black"}}>Help & FAQs</MenuItem>
+                </TopNavBorder>
+                <TopNavBorder>
+                    <TopNavBorderRight>
+                        <MenuItem style={{color: "Black"}}><Language>EN</Language></MenuItem>
+                    </TopNavBorderRight>    
+                </TopNavBorder>
             </Right>
         </Wrapper>
     </Container>

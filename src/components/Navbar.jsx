@@ -1,5 +1,5 @@
 import { Badge } from '@material-ui/core';
-import { LocalMallOutlined, Search } from '@material-ui/icons';
+import { FavoriteBorderOutlined, LocalMallOutlined, PermIdentityOutlined, Search } from '@material-ui/icons';
 import React from 'react'
 import styled from 'styled-components'
 
@@ -9,7 +9,7 @@ const Container = styled.div`
 `;
 
 const Wrapper = styled.div`
-    padding: 11px 200px;
+    padding: 0px 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -19,11 +19,36 @@ const Left = styled.div`
     flex: 1;
     display: flex;
     text-align: center;
+    align-items: center;
 `;
 
 const Logo = styled.h1`
     font-weight: bold;
     cursor: pointer;
+`;
+
+const MenuCategoryItem = styled.div`
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 25px;
+`;
+
+const NavBorder = styled.div`
+    border-left: 1px solid dimgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    height: 60px;
+`;
+
+const NavBorderRight = styled.div`
+    border-right: 1px solid dimgray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px;
 `;
 
 const Center = styled.div`
@@ -64,16 +89,34 @@ const Navbar = () => {
   return (
     <Container>
         <Wrapper>
-            <Left><Logo style={{color: "white"}}>BLOOMS.</Logo></Left>
+            <Left>
+                <Logo style={{color: "white"}}>BLOOMS.</Logo>
+                <NavBorder>
+                    <MenuCategoryItem style={{color: "white"}}>WOMEN</MenuCategoryItem>
+                </NavBorder>
+                <NavBorder>
+                    <NavBorderRight>
+                        <MenuCategoryItem style={{color: "white", marginRight:30}}>MEN</MenuCategoryItem>
+                    </NavBorderRight>
+                </NavBorder>
+            </Left>
             <Center>
-            <SearchContainer>
+                <SearchContainer>
                     <Input/>
                     <Search style={{color: "#2d2d2d", fontSize: 18}}/>
                 </SearchContainer>
             </Center>
             <Right>
-                <MenuItem style={{color: "white"}}>REGISTER</MenuItem>
-                <MenuItem style={{color: "white"}}>SIGN IN</MenuItem>
+                <MenuItem>
+                    <Badge color="primary" style={{color: "white"}}>
+                        <PermIdentityOutlined />
+                    </Badge>
+                </MenuItem>
+                <MenuItem>
+                    <Badge badgeContent={2} color="primary" style={{color: "white"}}>
+                        <FavoriteBorderOutlined />
+                    </Badge>
+                </MenuItem>
                 <MenuItem>
                     <Badge badgeContent={4} color="primary" style={{color: "white"}}>
                         <LocalMallOutlined />
