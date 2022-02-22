@@ -33,7 +33,7 @@ const MenuItem = styled.div`
 `;
 
 const TopNavBorder = styled.div`
-    border-left: 2px solid lightgray;
+    border-left: 1px solid lightgray;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -41,7 +41,7 @@ const TopNavBorder = styled.div`
 `;
 
 const TopNavBorderRight = styled.div`
-    border-right: 2px solid lightgray;
+    border-right: 1px solid lightgray;
     display: flex;
     align-items: center;
     justify-content: center;

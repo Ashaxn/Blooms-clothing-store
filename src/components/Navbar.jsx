@@ -35,7 +35,7 @@ const MenuCategoryItem = styled.div`
 `;
 
 const NavBorder = styled.div`
-    border-left: 1px solid dimgray;
+    border-left: 1px solid #525050;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -44,7 +44,7 @@ const NavBorder = styled.div`
 `;
 
 const NavBorderRight = styled.div`
-    border-right: 1px solid dimgray;
+    border-right: 1px solid #525050;
     display: flex;
     align-items: center;
     justify-content: center;
