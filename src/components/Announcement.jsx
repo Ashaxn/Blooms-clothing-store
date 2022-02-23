@@ -41,9 +41,14 @@ const Button = styled.button`
     font-weight: 700;
     height: 30px;
     width: 100px;
-    border: 2px solid #000000;
+    border: 3px solid #000000;
+    transition-duration: 0.5s;
     background-color: transparent;
     cursor: pointer;
+
+    :hover{
+        opacity:70% ;
+    }
 `;
 
 const Announcement = () => {

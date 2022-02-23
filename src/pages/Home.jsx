@@ -1,6 +1,7 @@
 import React from 'react'
 import Announcement from '../components/Announcement'
 import Navbar from '../components/Navbar'
+import Slider from '../components/Slider';
 import Topnavbar from '../components/Topnavbar';
 
 const Home = () => {
@@ -9,6 +10,7 @@ const Home = () => {
         <Topnavbar/>
         <Navbar/>
         <Announcement/>
+        <Slider/>
     </div>
   );
 };

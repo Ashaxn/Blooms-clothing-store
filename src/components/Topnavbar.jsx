@@ -20,10 +20,35 @@ const Right = styled.div`
     justify-content: flex-end;
 `;
 
+const MarketplaceBtn = styled.span`
+    font-size: 14px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+    :hover{
+        color:dodgerblue;
+    }
+`;
+
+const HelpFaq = styled.span`
+    font-size: 14px;
+    cursor: pointer;
+    transition-duration: 0.4s;
+
+    :hover{
+        color:dodgerblue;
+    }
+`;
+
 const Language = styled.span`
     font-size: 14px;
     cursor: pointer;
     margin-right: 30px;
+    transition-duration: 0.4s;
+
+    :hover{
+        color:dodgerblue;
+    }
 `;
 
 const MenuItem = styled.div`
@@ -53,10 +78,10 @@ const Topnavbar = () => {
         <Wrapper>
             <Right>
                 <TopNavBorder>
-                    <MenuItem style={{color: "Black"}}>Marketplace</MenuItem>
+                    <MenuItem style={{color: "Black"}}><MarketplaceBtn>Marketplace</MarketplaceBtn></MenuItem>
                 </TopNavBorder>
                 <TopNavBorder>
-                    <MenuItem style={{color: "Black"}}>Help & FAQs</MenuItem>
+                    <MenuItem style={{color: "Black"}}><HelpFaq>Help & FAQs</HelpFaq></MenuItem>
                 </TopNavBorder>
                 <TopNavBorder>
                     <TopNavBorderRight>
