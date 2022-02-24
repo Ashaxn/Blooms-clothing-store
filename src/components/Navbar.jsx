@@ -25,13 +25,22 @@ const Left = styled.div`
 const Logo = styled.h1`
     font-weight: bold;
     cursor: pointer;
+    margin-right:30px;
 `;
 
 const MenuCategoryItem = styled.div`
     font-size: 18px;
     font-weight: 600;
+    display: flex;
     cursor: pointer;
-    margin-left: 25px;
+    //margin-left: 25px;
+    background-color: #2d2d2d;
+    height: 60px;
+    align-items: center;
+
+    :hover{
+        background-color: #474747;
+    }
 `;
 
 const NavBorder = styled.div`
@@ -39,7 +48,7 @@ const NavBorder = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-left: 30px;
+    //margin-left: 30px;
     height: 60px;
 `;
 
@@ -92,11 +101,11 @@ const Navbar = () => {
             <Left>
                 <Logo style={{color: "white"}}>BLOOMS.</Logo>
                 <NavBorder>
-                    <MenuCategoryItem style={{color: "white"}}>WOMEN</MenuCategoryItem>
+                    <MenuCategoryItem style={{color: "white"}}><pre>      WOMEN      </pre></MenuCategoryItem>
                 </NavBorder>
                 <NavBorder>
                     <NavBorderRight>
-                        <MenuCategoryItem style={{color: "white", marginRight:30}}>MEN</MenuCategoryItem>
+                        <MenuCategoryItem style={{color: "white"}}><pre>         MEN         </pre></MenuCategoryItem>
                     </NavBorderRight>
                 </NavBorder>
             </Left>

@@ -15,8 +15,8 @@ const Wrapper =styled.div`
     height: 100%;
     display: flex;
     transform: translateX(${props => props.slideIndex * -100}vw);
-    transition: all 0.5s ease;
     animation: fadeInAnimation ease 3s;
+    transition: opacity 0.8s cubic-bezier(0.645, 0.045, 0.355, 1),transform 0.8s cubic-bezier(0.645, 0.045, 0.355, 1),visibility 0.8s cubic-bezier(0.645, 0.045, 0.355, 1);
 
 @keyframes fadeInAnimation {
     0% {
