@@ -2,39 +2,39 @@
 export const sliderItems = [
     {
       id: 1,
-      img: "./images/girl-5.png",
+      img: "./images/2-girl.png",
       title: "This is BLOOMS.",
       desc: "DON'T COMPROMISE ON STYLE!",
     },
     {
       id: 2,
-      img: "./images/boy-7.jpg",
+      img: "./images/1-men.png",
       title: "This is BLOOMS.",
       desc: "DON'T COMPROMISE ON STYLE!",
     },  
-    {
-      id: 3,
-      img: "./images/girl-8.jpg",
-      title: "This is BLOOMS.",
-      desc: "DON'T COMPROMISE ON STYLE!",
-    },
-    {
-        id: 4,
-        img: "./images/boy-6.jpg",
-        title: "This is BLOOMS.",
-        desc: "DON'T COMPROMISE ON STYLE!",
-      },
+    // {
+    //   id: 3,
+    //   img: "./images/girl-8.jpg",
+    //   title: "This is BLOOMS.",
+    //   desc: "DON'T COMPROMISE ON STYLE!",
+    // },
+    // {
+    //     id: 4,
+    //     img: "./images/boy-6.jpg",
+    //     title: "This is BLOOMS.",
+    //     desc: "DON'T COMPROMISE ON STYLE!",
+    //   },
   ];
 
 export const categories = [
     {
       id: 1,
-      img: "./images/categories/cat-men5.jpg",
+      img: "./images/categories/cat-men8.png",
       title: "TRIPPY BRIGHTS",
     },
     {
       id: 2,
-      img: "./images/categories/cat-girl6.jpg",
+      img: "./images/categories/cat-girl9.png",
       title: "SWEET 60S",
     },
 

@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 const Container = styled.div`
     height: 50px;
-    background-color: #ccff00;
+    background: linear-gradient(-45deg, #C8B9E5, #B7B6EB, #CDBADD, #9DB5FC);
 `;
 
 const Wrapper = styled.div`

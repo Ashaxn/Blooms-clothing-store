@@ -1,7 +1,6 @@
 import { ArrowLeftOutlined, ArrowRightOutlined } from "@material-ui/icons";
 import styled from "styled-components";
 import { useState } from "react";
-import {sliderItems} from "../data";
 
 const Container = styled.div`
     width: 100%;
@@ -59,8 +58,8 @@ const ImgContainer = styled.div`
 `;
 
 const Image = styled.img`
-    height: 100%;
-    width: fit-content;
+    //height: 100%;
+    width:100%;
 `;
 
 const InfoContainer = styled.div`
@@ -68,6 +67,14 @@ const InfoContainer = styled.div`
     text-align: center;
     align-items: center;
     width: 25%;
+    //padding: 50px;
+`;
+
+const InfoContainertwo = styled.div`
+    position: absolute;
+    text-align: center;
+    align-items: center;
+    width: 50%;
     //padding: 50px;
 `;
 
@@ -113,9 +120,9 @@ const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0);
     const handleClick = (direction) => {
         if(direction==="left"){
-            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 3)
+            setSlideIndex(slideIndex > 0 ? slideIndex - 1 : 1)
         }else {
-            setSlideIndex(slideIndex < 3 ? slideIndex + 1 : 0)
+            setSlideIndex(slideIndex < 1 ? slideIndex + 1 : 0)
         }
     };
 
@@ -125,19 +132,28 @@ const Slider = () => {
             <ArrowLeftOutlined/>
         </Arrow>
         <Wrapper slideIndex = {slideIndex}>
-            {sliderItems.map(item =>( 
             <Slide>
                 <ImgContainer>
-                    <Image src={item.img} />
+                    <Image src="./images/2-girl.png" />
                 </ImgContainer>
                 <InfoContainer>
-                    <Title>{item.title}</Title>
-                    <Desc>{item.desc}</Desc>
+                    <Title>This is BLOOMS.</Title>
+                    <Desc>DON'T COMPROMISE ON STYLE!</Desc>
                     <Button>SHOP WOMEN</Button>
                     <Button>SHOP MEN</Button>
                 </InfoContainer>
             </Slide>
-            ))}
+            <Slide>
+                <ImgContainer>
+                    <Image src="./images/1-men.png" />
+                </ImgContainer>
+                <InfoContainertwo>
+                    <Title>This is BLOOMS.</Title>
+                    <Desc>DON'T COMPROMISE ON STYLE!</Desc>
+                    <Button>SHOP WOMEN</Button>
+                    <Button>SHOP MEN</Button>
+                </InfoContainertwo>
+            </Slide>
         </Wrapper>
         <Arrow direction="right" onClick={()=>handleClick("right")}>
             <ArrowRightOutlined/>
