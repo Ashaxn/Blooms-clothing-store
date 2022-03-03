@@ -74,7 +74,7 @@ const InfoContainertwo = styled.div`
     position: absolute;
     text-align: center;
     align-items: center;
-    width: 25%;
+    width: 50%;
     //padding: 50px;
 `;
 
@@ -397,12 +397,12 @@ const Slider = () => {
                     <AnnouncementDescMen>Your Purchase</AnnouncementDescMen>
                 </BottomInfoContainerMen>
                 <BottomButtonContainerMen>
-                    <BottomButtonMen>WOMEN'S CLOTHING</BottomButtonMen>
+                    <BottomButtonMen>MEN'S CLOTHING</BottomButtonMen>
                     <BottomButtonMen>SHOES</BottomButtonMen>
-                    <BottomButtonMen>HANDBAGS</BottomButtonMen>
+                    <BottomButtonMen>BAGS</BottomButtonMen>
                 </BottomButtonContainerMen>
                 <BottomButtonContainerTwoMen>
-                    <BottomButtonTwoMen>JEWELRY</BottomButtonTwoMen>
+                    <BottomButtonTwoMen>BELTS</BottomButtonTwoMen>
                     <BottomButtonTwoMen>ACCESSORIES</BottomButtonTwoMen>
                 </BottomButtonContainerTwoMen>
                 </InfoContainertMen>
