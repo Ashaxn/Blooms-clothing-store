@@ -74,9 +74,232 @@ const InfoContainertwo = styled.div`
     position: absolute;
     text-align: center;
     align-items: center;
+    width: 25%;
+    //padding: 50px;
+`;
+
+const InfoContainerWomen = styled.div`
+`;
+
+const InfoContainertMen = styled.div`
+    position: absolute;
+    text-align: center;
+    align-items: center;
     width: 50%;
     //padding: 50px;
 `;
+const BottomInfoContainer = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 21.2%;
+`;
+
+const BottomAnnouncement = styled.h1`
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1.5px;
+    //background-color: white;
+    max-width: fit-content;
+    margin: auto;
+    padding: 2px;
+`;
+
+const BottomButtonContainer = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    text-align: center;
+    display: flex;
+    //flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 21.2%;
+`;
+
+const BottomButton = styled.button`
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration:underline;
+    text-underline-offset: 5px;
+    color: white;
+    height: 40px;
+    width: auto;
+    border: none;
+    transition-duration: 0.1s;
+    background-color: transparent;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+
+    :hover{
+        background-color: white;
+        border-color: white;
+        color:black;
+        text-decoration: white underline;
+    }
+`;
+
+const BottomButtonContainerTwo = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 75%;
+    text-align: center;
+    display: flex;
+    //flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 22.4%;
+`;
+
+const BottomButtonTwo = styled.button`
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration:underline;
+    text-underline-offset: 5px;
+    color: white;
+    height: 40px;
+    width: auto;
+    border: none;
+    transition-duration: 0.1s;
+    background-color: transparent;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+
+    :hover{
+        background-color: white;
+        border-color: white;
+        color:black;
+        text-decoration: white underline;
+    }
+`;
+
+
+const AnnouncementDesc = styled.text`
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-top: 5px;
+`;
+
+const BottomInfoContainerMen = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18.0%;
+`;
+
+const BottomAnnouncementMen = styled.h1`
+    font-size: 45px;
+    font-weight: 900;
+    color: white;
+    letter-spacing: 1.5px;
+    //background-color: white;
+    max-width: fit-content;
+    margin: auto;
+    padding: 2px;
+`;
+
+const BottomButtonContainerMen = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    text-align: center;
+    display: flex;
+    //flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 18.0%;
+`;
+
+const BottomButtonMen = styled.button`
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration:underline;
+    text-underline-offset: 5px;
+    color: white;
+    height: 40px;
+    width: auto;
+    border: none;
+    transition-duration: 0.1s;
+    background-color: transparent;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+
+    :hover{
+        background-color: white;
+        border-color: white;
+        color:black;
+        text-decoration: white underline;
+    }
+`;
+
+const BottomButtonContainerTwoMen = styled.div`
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 150%;
+    text-align: center;
+    display: flex;
+    //flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20.4%;
+`;
+
+const BottomButtonTwoMen = styled.button`
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 800;
+    text-decoration:underline;
+    text-underline-offset: 5px;
+    color: white;
+    height: 40px;
+    width: auto;
+    border: none;
+    transition-duration: 0.1s;
+    background-color: transparent;
+    margin-left: 2px;
+    margin-right: 2px;
+    cursor: pointer;
+
+    :hover{
+        background-color: white;
+        border-color: white;
+        color:black;
+        text-decoration: white underline;
+    }
+`;
+
+
+const AnnouncementDescMen = styled.text`
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+    margin-top: 5px;
+`;
+
 
 const Title = styled.h1`
     font-size: 60px;
@@ -99,9 +322,9 @@ const Desc = styled.p`
 const Button = styled.button`
     padding: 5px;
     margin: 16px;
-    font-size: 15px;
-    font-weight: 700;
-    height: 50px;
+    font-size: 12px;
+    font-weight: 600;
+    height: 40px;
     width: 150px;
     border: 2px solid #ffffff;
     transition-duration: 0.5s;
@@ -142,6 +365,21 @@ const Slider = () => {
                     <Button>SHOP WOMEN</Button>
                     <Button>SHOP MEN</Button>
                 </InfoContainer>
+                <InfoContainerWomen>
+                <BottomInfoContainer>
+                    <BottomAnnouncement>GET UP TO $300 OFF</BottomAnnouncement>
+                    <AnnouncementDesc>Your Purchase</AnnouncementDesc>
+                </BottomInfoContainer>
+                <BottomButtonContainer>
+                    <BottomButton>WOMEN'S CLOTHING</BottomButton>
+                    <BottomButton>SHOES</BottomButton>
+                    <BottomButton>HANDBAGS</BottomButton>
+                </BottomButtonContainer>
+                <BottomButtonContainerTwo>
+                    <BottomButtonTwo>JEWELRY</BottomButtonTwo>
+                    <BottomButtonTwo>ACCESSORIES</BottomButtonTwo>
+                </BottomButtonContainerTwo>
+                </InfoContainerWomen>
             </Slide>
             <Slide>
                 <ImgContainer>
@@ -153,6 +391,21 @@ const Slider = () => {
                     <Button>SHOP WOMEN</Button>
                     <Button>SHOP MEN</Button>
                 </InfoContainertwo>
+                <InfoContainertMen>
+                <BottomInfoContainerMen>
+                    <BottomAnnouncementMen>GET UP TO $300 OFF</BottomAnnouncementMen>
+                    <AnnouncementDescMen>Your Purchase</AnnouncementDescMen>
+                </BottomInfoContainerMen>
+                <BottomButtonContainerMen>
+                    <BottomButtonMen>WOMEN'S CLOTHING</BottomButtonMen>
+                    <BottomButtonMen>SHOES</BottomButtonMen>
+                    <BottomButtonMen>HANDBAGS</BottomButtonMen>
+                </BottomButtonContainerMen>
+                <BottomButtonContainerTwoMen>
+                    <BottomButtonTwoMen>JEWELRY</BottomButtonTwoMen>
+                    <BottomButtonTwoMen>ACCESSORIES</BottomButtonTwoMen>
+                </BottomButtonContainerTwoMen>
+                </InfoContainertMen>
             </Slide>
         </Wrapper>
         <Arrow direction="right" onClick={()=>handleClick("right")}>
